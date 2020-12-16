@@ -58,7 +58,7 @@ class App extends Component {
         ))}
         {this.state.showlist.map((item, index) =>(
           <div className="box-map-return" key={index}>
-            <div>
+            <div className="img-box">
               <img src={item.poster_path} alt="poster" className="img" />
             </div>
             <div className="description-box">
@@ -73,8 +73,10 @@ class App extends Component {
         
       </div>
       <div className="header">
+        <div className="header-box">
           <h1> Movies/Tv Shows Database</h1>
           <h2 className="text">Turn your room into a movie theater and grab some popcorn!</h2>
+        </div>  
 
         </div>
       </div>
